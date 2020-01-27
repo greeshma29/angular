@@ -1,0 +1,22 @@
+
+<div>
+    enter value 1: <input type="text"  id="value1" #val1>
+</div>
+<br>
+<div> 
+    enter value 2: <input type="text"  id="value2" #val2>
+</div>
+<br>
+<div>
+    <input type="button" id="add" value="add"  (click) = "addition(val1,val2)">
+    <input type="button" id="sub" value="sub" (click)="sub(val1,val2)" >
+    <input type="button" id="mul" value="mul" (click)="mul(val1,val2)">
+    <input type="button" id="div" value="div" (click)="div(val1,val2)" >
+     
+</div>
+<br>
+<div> 
+    result: <input type="text"  id="result" #res value="{{result}}">
+</div>
+
+

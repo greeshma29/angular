@@ -1,0 +1,27 @@
+<div>
+    <h3>Add new media</h3>
+    <div class="row">
+      <div class="col"><label for="">Enter title</label></div>
+      <div class="col"><input type="text" #txtTitle /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Enter description</label></div>
+      <div class="col"><input type="text" #txtDescription/></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Enter tag</label></div>
+      <div class="col"><input type="text" #txtTag /></div>
+    </div>
+    <div class="row">
+        <div class="col"><label for="">Enter filename</label></div>
+        <div class="col"><input type="text" #txtFileName /></div>
+      </div>
+    <div class="row">
+      
+      <div class="col"><input type="button" value="Save" (click)="saveMedia(txtTitle, txtDescription, txtTag, txtFileName )" /></div>
+    </div>
+  <hr/>
+  <div>
+        <app-media-list [mediaList]="media" > </app-media-list>
+  </div>     
+  </div>
