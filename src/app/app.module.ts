@@ -3,32 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './menu/menu.component';
-import { SearchResultComponent } from './search-result/search-result.component';
-import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
-import { ProductBaseComponent } from './product-base/product-base.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductEntryComponent } from './product-entry/product-entry.component';
-import { ErrorComponent } from './error/error.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { AddMediaComponent } from './media/add-media/add-media.component';
+import { ListMediaComponent } from './media/list-media/list-media.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    ContactComponent,
+    FormComponent,
     HomeComponent,
-    MenuComponent,
-    SearchResultComponent,
-    LoginComponent,
-    LogoutComponent,
-    ProductBaseComponent,
-    ProductListComponent,
-    ProductEntryComponent,
-    ErrorComponent
+    ContactComponent,
+    AboutComponent,
+    AddMediaComponent,
+    ListMediaComponent
   ],
   imports: [
     BrowserModule,

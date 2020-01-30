@@ -1,0 +1,18 @@
+<div>
+    <h3>Add media</h3>
+    <div class="row">
+        <div class="col"><label for="">Media name</label></div>
+        <div class="col"><input type="text" #txtName></div>
+    </div>
+    <div class="row">
+        <div class="col"><label for="">Media description</label></div>
+        <div class="col"><input type="text" #txtdes></div>
+    </div>
+    <div class="row">
+        <div class="col"><label for="">Media number</label></div>
+        <div class="col"><input type="text" #txtNum></div>
+    </div>
+    <div class="row">
+        <div class="col"> <input type="button" value="save" (click)="saveProduct(txtName, txtdes, txtNum)">  </div>
+    </div>
+</div>
