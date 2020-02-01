@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row mt-5">
+        <aside class="col-sm-3 mr-10">
+            <div  class="mr-5">
+                
+                <div class="row">
+                    <button type="button" class="btn btn-primary btn-block mb-3">Login</button>   
+                </div> 
+                <div class="row">
+                    <button type="button" class="btn btn-primary btn-block mb-3" (click)="register()">Register</button>                
+                </div>
+            </div>
+        </aside> 
+        <section class="col-sm-9">
+            <div class="row justify-content-start mb-3">
+                <h2>LOGIN</h2>
+            </div>
+            <div>
+                <div class="form-group row ">
+                    <label class="col-sm-3">User Name</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control form-control-sm" #uname placeholder="enter User Name">
+                    </div>
+                    
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-3">Password</label>
+                    <div class="col-6">
+                        <input type="password" class="form-control form-control-sm" #upassword placeholder="enter password">
+                    </div>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="offset-3 col-sm-9">
+                        <input type="button" class="form-control form-control-sm btn btn-primary w-25" value="LOGIN" (click)="signin(uname,upassword)">
+                        <span class="bg-danger">{{authorise}}</span>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </div>
+</div>

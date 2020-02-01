@@ -1,0 +1,9 @@
+<div class="container ">
+  <div *ngIf = "auth.isUserloggedIn()">
+    <app-headr></app-headr> 
+     <app-user-headr></app-user-headr>
+  </div>
+</div>
+<hr>
+
+<router-outlet></router-outlet>

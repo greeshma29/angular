@@ -1,0 +1,30 @@
+<div class="row mt-3 mb-4">
+    <div class="col-3 ">
+        <div class="d-flex justify-content-start">
+            <img src="/assets/logo.jpg" class="img-thumbnail" alt="LOGO" width="75px" height="75px">
+        </div>
+    </div>
+    <div class="col-6">
+        <nav>
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link btn-success" [routerLink]="['/uploadmedia']" >Upload Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-primary" [routerLink]="['/mymedia']" >MyMedia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-info" [routerLink]="['/followers']">Followers/Following</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="col-sm-3" >
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link btn-warning" [routerLink]="['/account']" >Account</a>
+            </li>
+        </ul>
+    </div>
+</div>
